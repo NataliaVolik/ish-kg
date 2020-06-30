@@ -1,0 +1,62 @@
+section#navigation
+  height: 803px
+  width: 100%
+  background: url('../img/bg-atm-employee.webp') center
+  background-size: cover
+
+  .lid
+    color: $white
+    position: relative
+    top: 250px
+    left: 10px
+    border: 1px solid $gray
+    margin-bottom: 1rem
+    border-radius: 0.25rem
+    background: $gray-glass
+
+  .mobile-menu
+    display: none
+    position: absolute
+    background-color: rgba(0,0,0,0.7)
+    width: 100%
+    margin-top: 79px
+    z-index: 2
+    color: white
+    padding: 10px 0
+    ul
+      list-style: none
+      li
+        margin: 10px 0
+    a, a:visited
+      color: white
+    a, a:visited, a:active, a:hover
+      text-decoration: none
+    a:hover
+      color: $red
+
+  img.logo
+    top: 1rem
+    left: -1rem
+    position: relative
+
+  .enter-button
+    color: $light-green
+    border-color: $light-green
+    background-color: transparent
+
+  .btn-secondary:hover
+    color: $white
+    background-color: $light-green
+
+@include media-breakpoint-down(xs)
+@include media-breakpoint-down(sm)
+@include media-breakpoint-down(md)
+  section#navigation
+    min-height: 685px
+    max-height: 700px
+    .lid
+      left: 0
+      top: 50px
+
+@include media-breakpoint-down(lg)
+@include media-breakpoint-down(xl)

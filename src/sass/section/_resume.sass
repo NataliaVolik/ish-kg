@@ -1,0 +1,19 @@
+@mixin font
+  font-family: RobotoSlab, sans-serif
+  font-weight: bold
+
+section#resume
+  width: 100%
+  background-size: cover
+  h4
+    +font
+
+  .card
+    background-color: $red
+    color: $white
+    text-align: center
+    +font
+    .card-title
+      font-size: 56px
+    .card-text
+      font-size: 24px

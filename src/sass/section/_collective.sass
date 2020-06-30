@@ -1,0 +1,30 @@
+section#collective
+  width: 100%
+  background-size: cover
+  background: #F2F2F2 url('../img/bg-invite.png') repeat-x center
+
+  h4
+    margin-bottom: 53px
+
+  .content-block
+    margin-bottom: 2rem
+    img
+      float: left
+      margin-right: 2rem
+    p
+      top: 10%
+      position: relative
+
+
+@include media-breakpoint-down(sm)
+  section#collective
+    .content-block
+      img
+        float: none
+        display: block
+        margin: 0 auto
+      p
+        top: 0
+        position: inherit
+        text-align: center
+        margin-top: 1rem
